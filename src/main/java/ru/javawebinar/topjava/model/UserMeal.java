@@ -6,9 +6,7 @@ import java.time.LocalDateTime;
  * GKislin
  * 11.01.2015.
  */
-public class UserMeal {
-    private Integer id;
-
+public class UserMeal extends BaseEntity {
     private final LocalDateTime dateTime;
 
     private final String description;
@@ -20,7 +18,7 @@ public class UserMeal {
     }
 
     public UserMeal(Integer id, LocalDateTime dateTime, String description, int calories) {
-        this.id = id;
+        super(id);
         this.dateTime = dateTime;
         this.description = description;
         this.calories = calories;

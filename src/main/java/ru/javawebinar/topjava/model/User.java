@@ -11,7 +11,6 @@ import java.util.Set;
  * Date: 22.08.2014
  */
 public class User extends NamedEntity {
-
     protected String email;
 
     protected String password;
